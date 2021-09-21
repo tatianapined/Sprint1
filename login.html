@@ -1,13 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="widht=device-widht, user-scalable=yes, initial-scale=1.0, maxium-scale=3.0, minium-scale=1.0">
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+    <form class="formulario" id="form-login">
+        <h1>Iniciar Sesion</h1>
+
+        <center>
+        <img src="logo.png" alt="Icono" style="width:128px; height: 128px; float: center;">
+        </center>
+
+        <div class="contenedor">        
+        <label id="username">Username</label>
+        <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Nombre completo" id="username">
+        </div>
+
+
+        <label id="contrasena">Contraseña</label>
+        <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="Contraseña" id="contrasena">
+        </div>
+
+    <input type="submit" value="Login" class="button" id="btn-submit-form">
+    <p>¿No tienes una cuenta?<a class="link" href="index.html">     Registrate</a></p>
+
+        </div>
+    </form>
+
 </body>
 </html>

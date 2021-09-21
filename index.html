@@ -1,13 +1,66 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="icon" href="ejemplomaquetado/logo.ico">
+
+    <meta name="viewport" content="widht=device-widht, user-scalable=yes, initial-scale=1.0, maxium-scale=3.0, minium-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <p>Hola mundo</p>
+    <form class="formulario" id="form-registro">
+        <h1>Registrate</h1>
+
+        <center>
+        <img src="logo.png" alt="Icono" style="width:128px; height: 128px; float: center;">
+        </center>
+
+        <div class="contenedor">        
+        <label id="username">Username</label>
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Nombre completo" id="username">
+        </div>
+
+        <label id="correo">Correo Electronico</label>
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" placeholder="Correo Electronico">
+        </div>
+
+        <label id="contrasena">Contraseña</label>
+        <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" placeholder="Contraseña" id="contrasena">
+        </div>
+
+
+        <label id="pregunta">Pregunta de seguridad</label>
+        <div class="input-contenedor">
+            <i class="fas fa-list icon"></i>
+            <input type="text" id="pregunta de seguridad" list="preguntas">
+            <br><datalist id="preguntas">
+            <option value="¿Nombre de tu mascota?" />
+            <option value="¿Nombre de tu primer colegio?" />
+            <option value="¿Cuál es tu lugar favorito?" />
+            </datalist>
+        </div>
+        
+        <label id="respuesta_seguridad">Respuesta de seguridad:</label><br>
+        <div class="input-contenedor">
+            <i class="fas fa-archive icon"></i>
+            <input type="text" placeholder="Respuesta de seguridad" id="respuesta_seguridad">
+        </div>
+        <br>
+    <button id="btn-registrar" type="button" class="button">Registrar</button>
+    <p>¿Ya tienes una cuenta?<a class="link" id="enlace-login" href="login.html">Login</a></p>
+    
+
+        </div>
+    </form>
 </body>
 </html>
